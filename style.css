@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Robot", sans-serif;
+}
+.main{
+    background-color: lightgreen;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+    align-items: center;
+}
+h1 {
+    margin: 2rem;
+    color: white;
+    font-size: 3rem;
+}
+.counter-card{
+    background-color: #6a67ce;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+.counter-card > p {
+    font-size: 3rem;
+    color: #fff;
+}
+.btn-container{
+    margin: 1rem 0;
+}
+.btn-container > button {
+    padding: 12px 24px;
+    border-radius: 10px;
+    margin: 0 12px;
+    background-color: #6a67ce;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    border: 2px solid #6a67ce;
+    transition: all 0.3s ease;
+}
+.btn-container > button:hover {
+    background-color: transparent;
+    border: 2px solid #6a67ce;
+    color: #6a67ce;
+}
+
+@media(max-width: '380px') {
+    .btn-container > button {
+        margin: 0 4px;
+    } 
+}
